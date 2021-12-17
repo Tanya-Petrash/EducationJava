@@ -2,6 +2,7 @@ package hw01;
 
 public class hw01 {
     public static void main(String[] args) {
+        // Даны 4 числа типа int. Сравнить их и вывести наименьшее на консоль.
         int firstnumber = 85;
         int secondnumber = 3;
         int thirdnumber = 5;
@@ -18,6 +19,7 @@ public class hw01 {
         } else {
             System.out.print("Mistake");
         }
+        // Ctrl Alt L выровнять
     }
 }
 
