@@ -11,8 +11,8 @@ public class Hw01 {
         // String firstname = "";
         // String secondname = "";
         //displayTheName(firstname, secondname);
-         int monthData = 0;
-         theSeasonOfYear(monthData);
+        int monthData = 0;
+        theSeasonOfYear(monthData);
     }
 
     public static void theSeasonOfYear(int monthData) {
@@ -20,8 +20,7 @@ public class Hw01 {
         Scanner scan = new Scanner(System.in); // для ввода в консоль
         System.out.println("Write the month");
         monthData = scan.nextInt();
-        switch(monthData)
-        {
+        switch (monthData) {
             case 1:
                 System.out.print("It's winter");
                 break;
@@ -31,7 +30,6 @@ public class Hw01 {
             case 3:
                 System.out.print("It's spring");
                 break;
-
             case 4:
                 System.out.print("It's spring");
                 break;
