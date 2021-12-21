@@ -20,34 +20,11 @@ public class Hw01 {
     public static void theSeasonOfYear(int monthData) {
         //  Дано число месяца (тип int). Необходимо определить время года (зима, весна, лето, осень) и вывести на консоль.
         monthData = 12;
-        List<Integer> winter = new ArrayList<>();
-        int december = 12;
-        int january = 01;
-        int february = 02;
-        winter.add(december);
-        winter.add(january);
-        winter.add(february);
-        List<Integer> spring = new ArrayList<>();
-        int march = 03;
-        int april = 04;
-        int may = 05;
-        spring.add(march);
-        spring.add(april);
-        spring.add(may);
-        List<Integer> summer = new ArrayList<>();
-        int june = 06;
-        int july = 07;
-        int august = 8; // почему ругается на 08
-        summer.add(june);
-        summer.add(july);
-        summer.add(august);
-        List<Integer> autumn = new ArrayList<>();
-        int september = 9;  // почему ругается на 09
-        int october = 10;
-        int november = 11;
-        autumn.add(september);
-        autumn.add(october);
-        autumn.add(november);
+
+         List<Integer> winter = Arrays.asList(12,1,2);
+        List<Integer> spring = Arrays.asList(3,4,5);
+        List<Integer> summer = Arrays.asList(6,7,8);
+        List<Integer> autumn = Arrays.asList(9,10,11);
         for (Integer item : winter) {
             if (monthData == item) {
                 System.out.print("It's winter");
@@ -67,7 +44,7 @@ public class Hw01 {
             if (monthData == item) {
                 System.out.print("It's autumn");
             }
-        }
+        } 
     }
 
 
