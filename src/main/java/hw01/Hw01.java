@@ -22,40 +22,24 @@ public class Hw01 {
         monthData = scan.nextInt();
         switch (monthData) {
             case 1:
-                System.out.print("It's winter");
-                break;
             case 2:
+            case 12:
                 System.out.print("It's winter");
                 break;
             case 3:
-                System.out.print("It's spring");
-                break;
             case 4:
-                System.out.print("It's spring");
-                break;
             case 5:
                 System.out.print("It's spring");
                 break;
             case 6:
-                System.out.print("It's summer");
-                break;
             case 7:
-                System.out.print("It's summer");
-                break;
             case 8:
                 System.out.print("It's summer");
                 break;
             case 9:
-                System.out.print("It's autumn");
-                break;
             case 10:
-                System.out.print("It's autumn");
-                break;
             case 11:
                 System.out.print("It's autumn");
-                break;
-            case 12:
-                System.out.print("It's winter");
                 break;
         }
         /*  List<Integer> winter = Arrays.asList(12, 1, 2);
