@@ -8,11 +8,87 @@ public class Hw01 {
     public static void main(String[] args) {
         // Ctrl Alt L выровнять
         // displayTheHighestAndSmallNumber(new ArrayList<>(Arrays.asList(85, 3, 5, 1000, 2596)));
-        // String firstname = "";
-        // String secondname = "";
-        //displayTheName(firstname, secondname);
-        int monthData = 0;
-        theSeasonOfYear(monthData);
+        rombHighLineFigure();
+    }
+
+    public static void topDownHighLineFigure() {
+        for (int i = 0; i < 10; i++) {
+            for (int k = 0; k < 10; k++) {
+                if (i <= k) {
+                    System.out.print("  ");
+                } else {
+                    System.out.print("* ");
+                }
+            }
+            System.out.println("");
+        }
+    }
+
+    public static void downTopHighLineFigure() {
+        for (int i = 0; i < 10; i++) {
+            for (int k = 0; k < 10; k++) {
+                if (i >= k) {
+                    System.out.print("  ");
+                } else {
+                    System.out.print("* ");
+                }
+            }
+            System.out.println("");
+        }
+    }
+
+    public static void cross() {
+        for (int i = 0; i < 10; i++) {
+            for (int k = 0; k < 10; k++) {
+                if (i == k || i == 9 - k) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println("");
+        }
+    }
+
+    public static void rombHighLineFigure() {
+        for (int i = 0; i < 10; i++) {
+            for (int k = 0; k < 10; k++) {
+                if (i <= k && i <= 9 - k) {
+                    System.out.print("* ");
+                } else if (!(i + 1 <= k || i + 1 <= 9 - k)) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println("");
+        }
+    }
+
+    public static void downToHighLineFigure() { //первый вариант
+        for (int i = 0; i < 10; i++) {
+            for (int k = 0; k < 10; k++) {
+                if (k == 9 - i) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println("");
+        }
+    }
+
+    public static void highttodown_line_figures() {
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (i == j) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println("");
+        }
     }
 
     public static void theSeasonOfYear(int monthData) {
