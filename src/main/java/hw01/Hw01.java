@@ -8,10 +8,25 @@ public class Hw01 {
     public static void main(String[] args) {
         // Ctrl Alt L выровнять
         // displayTheHighestAndSmallNumber(new ArrayList<>(Arrays.asList(85, 3, 5, 1000, 2596)));
-        puzzle();
+        orderOfNumbers();
+    }
+
+    public static void orderOfNumbers() {
+        //Написать метод, которому можно задать максимальное число, и который выводит с помощью цикла начиная
+        // с 0 и до максимального числа четные цифры по возростанию, а не четные по убыванию, например: 9 2 7 4 5 6 3 8 1
+        for (int i = 10; i > 0; i--) {
+            if (i % 2 != 0) {
+                System.out.print(i);
+            } else {
+                System.out.print(10 - i);
+            }
+        }
     }
 
     public static void puzzle() {
+        // Задать загадку пользователю, у которого есть 3 попытки ответить.
+        // Если не угадал - программа завершается. После неудачной попытки “Подумайте ещё“.
+        // Если пользователь напишет “Сдаюсь“ - вывести правильный ответ. Если ответит верно вывести “Правильно”
         Scanner scan = new Scanner(System.in); // для ввода в консоль
         System.out.print("Может ли дождь лить два дня подряд?\n");
         System.out.print("Enter answer\n");
@@ -30,11 +45,11 @@ public class Hw01 {
                 if (text.contentEquals("н") || text.contentEquals("no") ||
                     text.contentEquals("нет") || text.contentEquals("n")) {
                     System.out.print("Right\n");
-                    break;} else if(text.contentEquals("Сдаюсь")) {
+                    break;
+                } else if (text.contentEquals("Сдаюсь")) {
                     System.out.print("Right answer is no\n");
-                    break;} else {
-                    System.out.print("Game over\n");
-                }
+                    break;
+                } else if (i == 3) {System.out.print("Game over\n");}
             }
         }
     }
